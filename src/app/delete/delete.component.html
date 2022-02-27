@@ -1,0 +1,18 @@
+<button class="btn btn-primary" routerLink="/">
+  Back
+</button>
+<table class="table table-striped">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+  </tr>
+  <tr >
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.price}}</td>
+    <td>{{student.description}}</td>
+  </tr>
+</table>
+<button class="btn btn-primary" (click)="delete()">Delete</button>

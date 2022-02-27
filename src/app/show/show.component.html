@@ -1,0 +1,19 @@
+<button class="btn btn-primary" routerLink="/create">
+  Add new tour
+</button>
+
+<table class="table table-striped">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr *ngFor="let s of list" >
+    <td>{{s.id}}</td>
+    <td><a (click)="showStudent(s)" routerLink="/detail">{{s.name}}</a></td>
+    <td>{{s.price}}</td>
+    <td><a (click)="showStudent(s)" routerLink="/edit">Edit</a></td>
+    <td><a (click)="showStudent(s)" routerLink="/delete">Delete</a></td>
+  </tr>
+</table>

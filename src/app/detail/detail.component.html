@@ -1,0 +1,22 @@
+<button class="btn btn-primary" routerLink="/create">
+  Add new tour
+</button>
+<button class="btn btn-primary" routerLink="/">
+  Back
+</button>
+
+<table class="table table-striped">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr >
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.price}}</td>
+    <td><a (click)="showStudent(student)" routerLink="/edit">Edit</a></td>
+    <td><a (click)="showStudent(student)" routerLink="/delete">Delete</a></td>
+  </tr>
+</table>
